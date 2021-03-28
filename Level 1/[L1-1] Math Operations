@@ -86,7 +86,7 @@ print("a =", a)
 # output : a = 25
 ```
 
-而在其他语言中，往往求幂运算需要用其他方法实现，如 Java 中的 `Math.pow()` 或者 C++ 中的 `pow()`。
+而在其他语言中，往往求幂运算需要用其他方法实现，如 Java 中的 `Math.pow()`。
 
 ```Java
 System.out.println(Math.pow(5, 2));
