@@ -20,4 +20,7 @@
 
 由于整个算法的过程像是在将一个数字慢慢"上浮"到数组的末端，因此被形象地称为冒泡排序。
 
-冒泡排序
+在这里，向大家推荐一个网站：[旧金山大学算法与数据结构可视化工具](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html ) ，可以详细地看到各种算法与数据结构的动态演示，在系列教程中，将会有大量动态图片来源于此网站，比如冒泡排序：
+
+![冒泡排序演示](https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-1%5D%20bubble%20sort%20animation.gif?raw=true)
+
