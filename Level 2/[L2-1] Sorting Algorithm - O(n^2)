@@ -24,3 +24,6 @@
 
 ![冒泡排序演示](https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-1%5D%20bubble%20sort%20animation.gif?raw=true)
 
+在上面的演示图片中，每次红色的标记走完数组时，可以发现，数组中**未排序部分的数字的最大值**被移动到了**未排序部分的末端**，就像把这个数字"上浮"到它应该在的位置。
+
+那么该如何实现这个"上浮"的操作呢？
