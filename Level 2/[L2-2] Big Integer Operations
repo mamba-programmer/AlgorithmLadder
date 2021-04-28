@@ -39,37 +39,35 @@ print(a + b)
 
 所谓模拟法，就是在小学一年级的时候，老师教我们的**列竖式计算大法**。
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/test.png?raw=true" style="zoom: 67%;" />
-
-
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%201.png?raw=true" style="zoom:67%;" />
 
 那么在计算机中2021042899+199903079我们该如何计算呢？
 
 **第一步：**在数学中，我们是从最后一位开始计算，而在计算机中，数组是从下标0开始计算。因此，需要把输入的字符串倒序存储。
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text1.png?raw=true" style="zoom:67%;" />
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%202.png?raw=true" style="zoom:67%;" />
+
+
 
 **第二步：**计算最开始的两个数字，9+9=18 ，将个位数`8`存放在第一个位置，十位数`1`加到下一个位置。
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text2.png?raw=true" style="zoom:67%;" />
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%203.png?raw=true" style="zoom:67%;" />
+
+
 
 **第三步：**继续计算第二列数字，1+9+7=17，同理将个位数`7`存放在第二个位置，十位数`1`加到下一个位置。
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text3.png?raw=true" style="zoom:67%;" />
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%204.png?raw=true" style="zoom:67%;" />
 
 **第四步：**以此类推。
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text4.png?raw=true" style="zoom:67%;" />
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%205.png?raw=true" style="zoom:67%;" />
 
-
-
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text5.png?raw=true" style="zoom:67%;" />
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%206.png?raw=true" style="zoom:67%;" />
 
 **思考：**如果遇到9999999999+999999999的情况，有最高位的进位该如何处理？
 
-<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/text6.png?raw=true" style="zoom:67%;" />
-
-
+<img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%207.png?raw=true" style="zoom:67%;" />
 
 接下来让我们一起学习一下Java的代码：
 
