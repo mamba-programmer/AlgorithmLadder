@@ -59,7 +59,7 @@ print(a + b)
 
 <img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%204.png?raw=true" style="zoom:67%;" />
 
-**第四步：**以此类推。
+**第四步：**以此类推，最后逆序输出，得到答案2220945978。
 
 <img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%205.png?raw=true" style="zoom:67%;" />
 
@@ -69,7 +69,9 @@ print(a + b)
 
 <img src="https://github.com/jiuzhangsuanfa/AlgorithmLadder/blob/master/Level%202/Image/%5BL2-2%5D%20big%20integer%20add%207.png?raw=true" style="zoom:67%;" />
 
-接下来让我们一起学习一下Java的代码：
+
+
+**带着这个问题，让我们一起学习一下Java的代码：**
 
 ```java
 public class Solution {
@@ -101,7 +103,27 @@ public class Solution {
 
 
 
+## 2.大数减法(Subtraction of large numbers)
 
+大数减法和大数加法有着异曲同工之妙。
+
+特殊的点就在于，a - b 可能会变成负数，因此，在模拟运算前，我们要先判断正负。
+
+```java
+char sign = '+';  //默认为正数
+if (lenA < lenB) {
+	sign = '-';
+} else if (lenA == lenB) {
+	int i = lenA - 1;
+	// 找到第一个不相等的位置
+    while (i > 0 && a[i] == b[i]) {
+        i--;
+    }
+    if (a[i] < b[i]) {
+        sign = '-';
+    }
+}
+```
 
 
 
